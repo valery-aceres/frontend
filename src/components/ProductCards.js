@@ -4,17 +4,24 @@ import CardItem from './CardItem';
 
 function ProductCards() {
   return (
-    <div className='cards'>
+    <div className='container my-4'> {/*//formerly 'cards'  */}
       <h1>All Products!</h1>
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
-          <ul className='cards__items'>
+      <div className='row' > {/*//formerly 'cards__container'  */}
+        <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'  card mb-4 m-auto  */}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/iphone.jpg'
               text="Iphone 12"
               label='APPLE'
               path='/products'
             />
+      
+          </ul>
+          </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
+            
             <CardItem
               src='images/samsung.jpg'
               text='Samsung S20'
@@ -22,13 +29,21 @@ function ProductCards() {
               path='/products'
             />
           </ul>
-          <ul className='cards__items'>
+          </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/iphone.jpg'
               text="Iphone 12"
               label='APPLE'
               path='/products'
             />
+          </ul>
+          </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/samsung.jpg'
               text='Samsung S20'
@@ -36,13 +51,22 @@ function ProductCards() {
               path='/products'
             />
           </ul>
-          <ul className='cards__items'>
+          </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/iphone.jpg'
               text="Iphone 12"
               label='APPLE'
               path='/products'
             />
+
+          </ul>
+          </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/samsung.jpg'
               text='Samsung S20'
@@ -50,13 +74,21 @@ function ProductCards() {
               path='/products'
             />
           </ul>
-          <ul className='cards__items'>
+          </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/iphone.jpg'
               text="Iphone 12"
               label='APPLE'
               path='/products'
             />
+          </ul>
+          </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/samsung.jpg'
               text='Samsung S20'
