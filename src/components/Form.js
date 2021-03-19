@@ -5,7 +5,7 @@ import './SignUp.css';
 function form() {
   return (
       
-      <div className="login-page">
+      <div>
         
         <form className = "form">
         <label>
@@ -21,17 +21,15 @@ function form() {
             <input type="text" placeholder="email" />
         </label>
         <label>
-            New Password:
+            Password:
             <input type="text" placeholder="password" />
         </label>
         <label>
-            Retype Password:
+            Confirm Password:
             <input type="text" placeholder="retype password" />
         </label>
         <button>Submit</button>
         </form>
-        <h1 class="message">Already Registered? <a href="#">Login</a></h1>
-        <br/>
     </div>
     
   );

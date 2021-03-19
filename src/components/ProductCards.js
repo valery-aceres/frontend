@@ -64,7 +64,6 @@ function ProductCards() {
               path='/products'
             />
           </ul>
-
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
+import { Button2 } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
@@ -15,16 +16,16 @@ function HeroSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          Shop Now
+          Sign In
         </Button>
-        <Button
+        <Button2
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          ALL PRODUCTS <i className='far fa-arrow-alt-circle-right' />
-        </Button>
+          SHOP NOW <i className='far fa-arrow-alt-circle-right' />
+        </Button2>
       </div>
     </div>
   );
