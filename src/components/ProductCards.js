@@ -38,6 +38,7 @@ function ProductCards() {
               text="Iphone 12"
               label='APPLE'
               path='/products'
+              
             />
           </ul>
           </div>
