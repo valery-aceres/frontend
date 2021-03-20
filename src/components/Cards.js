@@ -4,17 +4,22 @@ import CardItem from './CardItem';
 
 function Cards() {
   return (
-    <div className='cards'>
+    <div className='cards'> 
       <h1>Check out Featured Products!</h1>
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
-          <ul className='cards__items'>
+      <div className='row' > {/*//formerly 'cards__container'  */}
+        <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/iphone.jpg'
               text="Iphone 12"
               label='APPLE'
               path='/products'
             />
+          </ul>
+        </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/samsung.jpg'
               text='Samsung S20'
@@ -22,19 +27,32 @@ function Cards() {
               path='/products'
             />
           </ul>
-          <ul className='cards__items'>
+          </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/huawei.jpg'
               text="Huawei Mate X"
               label='HUAWEI'
               path='/products'
             />
+            </ul>
+        </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/google.jpg'
               text='Google Pixel 6'
               label='GOOGLE'
               path='/products'
             />
+            </ul>
+        </div>
+
+          <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
+          <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
               src='images/nokia.jpg'
               text='Nokia 5.4'
@@ -42,6 +60,7 @@ function Cards() {
               path='/products'
             />
           </ul>
+          
         </div>
       </div>
     </div>
