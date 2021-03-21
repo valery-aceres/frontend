@@ -34,27 +34,28 @@ function Footer() {
             <Link to='/privacypolicy'>Privacy Policy</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/contact'>Contact</Link>
-            <Link to='/productsupport'>Product Support</Link>
-            <Link to='/ordersupport'>Order Tracking</Link>
-            <Link to='/location'>Location</Link>
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Orders</h2>
+          <h2>Orders</h2>
             <Link to='/account'>My Account</Link>
             <Link to='/shippinganddelivery'>Shipping and Delivery</Link>
             <Link to='/returnpolicy'>Return Policy</Link>
             <Link to='/faq'>FAQs</Link>
           </div>
+        </div>
+        <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Community</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+          <h2>Contact Us</h2>
+            <Link to='/contact'>Contact</Link>
+            <Link to='/productsupport'>Product Support</Link>
+            <Link to='/ordersupport'>Order Tracking</Link>
+            <Link to='/location'>Location</Link>
+          </div>
+          <div class='footer-link-items'>
+            <h2>Brands</h2>
+            <Link to='/products'>Iphone</Link>
+            <Link to='/products'>Samsung</Link>
+            <Link to='/products'>Huawei</Link>
+            <Link to='/products'>Oppo</Link>
+            <Link to='/products'>Nokia</Link>
           </div>
         </div>
       </div>
