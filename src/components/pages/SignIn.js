@@ -6,7 +6,7 @@ import Footer from '../Footer';
 export default function SignIn() {
   return (
     <>
-    <div>
+    <div className ="container">
         <form className = "form">
         <label>
             Email:

@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
   return (
     <>
     <h1>Privacy Policy</h1>
-    <p>Indigo Eagles is compliant with The General Data Protection Regulation (GDPR) (EU) 2016/679.</p>
+    <p><a href="/">Indigo Eagles</a> is compliant with The General Data Protection Regulation (GDPR) (EU) 2016/679.</p>
     <p>It means that we are open about our methods of tracking and use of the visitors’ personal data, and you can freely check what exactly we’re doing to it.</p>
     <p>At Indigo Eagles, we collect:</p>
     <ul className="list">
@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
     </ul>
     <p>If you keep browsing our webstore after reading this Privacy Policy, you give us the consent to use your personal details for the purposes explained above.</p>
     <p>If you don’t agree to these terms, please leave the website.</p>
-    <p>You can email us at support@adorethebeauty.com and ask:</p>
+    <p>You can email us at support@indigoeagles.com and ask:</p>
     <ul className="list">
     <li className="list">To receive the copy of your personal details we have collected.</li>
     <li className="list">To delete your personal details from our system.</li>

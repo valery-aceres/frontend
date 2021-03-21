@@ -37,20 +37,20 @@ function Footer() {
             <h2>Contact Us</h2>
             <Link to='/contact'>Contact</Link>
             <Link to='/productsupport'>Product Support</Link>
-            <Link to='/ordersupport'>Order Support</Link>
-            <Link to='/'>Location</Link>
+            <Link to='/ordersupport'>Order Tracking</Link>
+            <Link to='/location'>Location</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Orders</h2>
-            <Link to='/'>My Account</Link>
-            <Link to='/'>Shipping and Delivery</Link>
-            <Link to='/'>Return Policy</Link>
-            <Link to='/'>FAQs</Link>
+            <Link to='/account'>My Account</Link>
+            <Link to='/shippinganddelivery'>Shipping and Delivery</Link>
+            <Link to='/returnpolicy'>Return Policy</Link>
+            <Link to='/faq'>FAQs</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Social Media</h2>
+            <h2>Community</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>

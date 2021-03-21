@@ -12,8 +12,8 @@ h5 {
     align-items: center;
     text-align: justify;
     justify-content: space-evenly;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 400px;
+    margin-left: 400px;
     padding: 3px;
   }
 
@@ -21,20 +21,67 @@ p {
     align-items: center;
     text-align: justify;
     justify-content: space-evenly;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 400px;
+    margin-left: 400px;
     padding: 3px;
   }
 
- ul.list {
+ul.list {
     list-style-position: inside;
     align-items: center;
     text-align: justify;
     justify-content: space-evenly;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 400px;
+    margin-left: 400px;
     padding: 3px;
+    text-indent: 10px;
+    white-space: normal;
+    float: left;
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
   }
-  ul.list {
-    text-indent: 30px;
+  
+  /* Shipping and Delivery Page - Table */
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-bottom: 10px;
   }
+  
+table td, #table th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 12px;
+  }
+  
+table tr:nth-child(even){background-color: #f2f2f2;}
+  
+table tr:hover {background-color: #ddd;}
+  
+table th {
+    padding: 12px;
+    text-align: left;
+    background-color: rgb(44, 43, 43);
+    color: white;
+  }
+
+.faq-row-wrapper {
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+.row-content-text {
+  align-items: center;
+  text-align: justify;
+  justify-content: space-evenly;
+  padding: 3px;
+  white-space: normal;
+  float: right;
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+}
