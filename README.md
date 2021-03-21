@@ -1,1 +1,2 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Indigo Eagles - Group 6
+Astrolabs Final Project
