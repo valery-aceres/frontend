@@ -29,26 +29,25 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>Explore</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Privacy Policy</Link>
-            <Link to='/'>Terms of Service</Link>
+            <Link to='/about'>About</Link>
+            <Link to='/termsandconditions'>Terms and Conditions</Link>
+            <Link to='/privacypolicy'>Privacy Policy</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Product Support</Link>
-            <Link to='/'>Order Support</Link>
+            <Link to='/contact'>Contact</Link>
+            <Link to='/productsupport'>Product Support</Link>
+            <Link to='/ordersupport'>Order Support</Link>
             <Link to='/'>Location</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Offers</h2>
-            <Link to='/'>Offers</Link>
-            <Link to='/'>Rewards</Link>
-            <Link to='/'>Discounts</Link>
-            <Link to='/'>Affliation</Link>
+            <h2>Orders</h2>
+            <Link to='/'>My Account</Link>
+            <Link to='/'>Shipping and Delivery</Link>
+            <Link to='/'>Return Policy</Link>
+            <Link to='/'>FAQs</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>

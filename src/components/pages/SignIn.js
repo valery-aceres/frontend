@@ -20,7 +20,7 @@ export default function SignIn() {
   
         <p>Forgot <a href="#">password</a>?</p>
         <br/>
-        <p>Not Registered yet? Click <a href="/sign-up">Register Now!</a>?</p>
+        <p className="message">Not Registered yet? Click <a href="/sign-up">Register Now!</a>?</p>
         </form>
         
     </div>
@@ -28,3 +28,5 @@ export default function SignIn() {
   </>
     );
 }
+
+

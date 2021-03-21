@@ -1,0 +1,40 @@
+
+h1 {
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding: 3px;
+  }
+
+h5 {
+    align-items: center;
+    text-align: justify;
+    justify-content: space-evenly;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 3px;
+  }
+
+p {
+    align-items: center;
+    text-align: justify;
+    justify-content: space-evenly;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 3px;
+  }
+
+ ul.list {
+    list-style-position: inside;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-evenly;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 3px;
+  }
+  ul.list {
+    text-indent: 30px;
+  }
