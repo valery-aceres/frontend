@@ -20,8 +20,7 @@
 }
 
 .footer-subscription > p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-subscription-heading {
@@ -157,7 +156,21 @@
   .social-media-wrap {
     flex-direction: column;
   }
+  .footer-subscription-heading {
+    margin: auto;
+  }
+  .footer-subscription-text {
+    margin: auto;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
+  .footer-subscription-heading {
+    margin: auto;
+  }
+  .footer-subscription-text {
+    margin: auto;
+  }
 }
+

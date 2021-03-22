@@ -8,6 +8,15 @@ h1 {
     padding: 3px;
   }
 
+h1.message {
+    background-color:rgb(26, 23, 23);
+    color:white;
+    padding:30px;
+    width: 100%;
+    margin: auto;
+
+  }
+
 h5 {
     align-items: center;
     text-align: justify;
@@ -85,3 +94,34 @@ table th {
   height: auto;
   word-wrap: break-word;
 }
+
+/* Mobile Device */
+@media screen and (max-width: 480px) {
+  h1, h5, p {
+    width: 100%;
+    margin-left: 10x;
+    margin-right: 10px;
+    word-wrap: break-word;
+  }
+
+}
+/* Tables */
+@media screen and (max-width: 768px) {
+  h1, h5, p {
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    word-wrap: break-word;
+  }
+
+}
+
+@media screen and (max-width: 1400px) {v
+  h1, h5, p {
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    word-wrap: break-word;
+  }
+}
+

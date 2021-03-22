@@ -3,7 +3,6 @@ import GoogleMapReact from 'google-map-react';
 import Marker from '../Marker';
 import Footer from '../Footer';
 
-
 const SimpleMap = (props) => {
     const [center, setCenter] = useState({lat: 25.077544068375236, lng: 55.14700660459156 });
     const [zoom, setZoom] = useState(11);
@@ -18,12 +17,15 @@ const SimpleMap = (props) => {
             lat={25.077544068375236}
             lng={55.14700660459156}
             name="My Marker"
-            color="blue"
+            color="red"
           />
         </GoogleMapReact>
         <Footer />
       </div>
     );
 }
+
+
+
 
 export default SimpleMap;

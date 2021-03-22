@@ -7,10 +7,10 @@ export default function ReturnPolicy() {
   return (
     <>
     <h1 class="message">Refunds and Return Policy</h1>
-    <h5>Order cancellation</h5>
+    <h5><b>Order cancellation</b></h5>
     <p>
     All orders can be canceled until they are shipped. If your order has been paid and you need to change or cancel it, please contact us within 12 hours.</p>
-    <h5>Refunds</h5>
+    <h5><b>Refunds</b></h5>
     <p>
     Your satisfaction is our #1 priority. We want you to shop with confidence. That’s why we proudly offer an absolute satisfaction guarantees that ensure you’ll receive your item on time and as described.
     </p>
@@ -31,7 +31,7 @@ export default function ReturnPolicy() {
     <p>
     All products are 14-day money back guarantee. Just send us a message on v page or contact us at support@indigoeagles.com and we will refund the purchase price.
     </p>
-    <h5>Easy Returns</h5>
+    <h5><b>Easy Returns</b></h5>
     <p>
     All products are backed with 14-day money back guarantee. Just <a href="/contact"> contact us</a> and we will refund the purchase price.
     </p>
