@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -18,12 +19,15 @@ import ReturnPolicy from './components/pages/ReturnPolicy';
 import Faq from './components/pages/Faq';
 
 
+import { FormspreeProvider } from "@formspree/react";
 
 
 function App() {
   return (
+    
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
@@ -45,6 +49,7 @@ function App() {
         </Switch>
       </Router>
     </>
+    
   );
 }
 

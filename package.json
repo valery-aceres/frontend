@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.14.0",
+    "bootstrap": "^4.6.0",
     "google-map-react": "^2.1.9",
     "nuka-carousel": "^4.7.7",
     "react": "^16.13.1",

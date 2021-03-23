@@ -4,6 +4,7 @@ import { Button } from './Button';
 import { Button2 } from './Button';
 import './HeroSection.css';
 
+
 function HeroSection() {
   return (
     <div className='hero-container'>
@@ -17,7 +18,7 @@ function HeroSection() {
           buttonSize='btn--large'
         >
           Sign In
-        </Button>
+        </Button> 
         <Button2
           className='btns'
           buttonStyle='btn--primary'

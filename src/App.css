@@ -21,7 +21,6 @@
 }
 
 .products {
-  background-image: url('/images/temporary.jpg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -29,7 +28,6 @@
   font-size: 100px;
 }
 .contact {
-  background-image: url('/images/contactbg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,10 +35,41 @@
   font-size: 100px;
 }
 .sign-up {
-  background-image: url('/images/contactbg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
+
+
+/* reset */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+

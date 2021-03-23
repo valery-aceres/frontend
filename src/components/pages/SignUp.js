@@ -93,90 +93,94 @@ const SignUp = () => {
     }
 
     return (
-        <div className="container" style={{maxWidth: '600px'}}>
-            <h1 className="mt-4 mb-3">Registration</h1>
-            <div className="mb-3">
-                <label for="exampleInputFirstName1" className="form-label">First name</label>
-                <input ref={ (element) => firstNameField = element } type="text" className="form-control" id="exampleInputFirstName1" aria-describedby="firstNameHelp"/>
-            </div>
-            <div className="mb-3">
-                <label for="exampleInputLastName1" className="form-label">Last name</label>
-                <input type="text" 
-                ref={ (element) => lastNameField = element }
-                className="form-control" 
-                id="exampleInputLastName1" 
-                aria-describedby="lastNameHelp"/>
-            </div>
-            <div className="mb-3">
-                <label for="exampleInputEmail1" className="form-label">Email address</label>
-                <input 
-                    type="email"
-                    ref={ (element) => emailField = element }
+        <div>
+            <div className="container" style={{maxWidth: '600px'}}>
+                <h1 className="mt-4 mb-3">Registration</h1>
+                <div className="mb-3">
+                    <label for="exampleInputFirstName1" className="form-label">First name</label>
+                    <input ref={ (element) => firstNameField = element } type="text" className="form-control" id="exampleInputFirstName1" aria-describedby="firstNameHelp"/>
+                </div>
+                <div className="mb-3">
+                    <label for="exampleInputLastName1" className="form-label">Last name</label>
+                    <input type="text" 
+                    ref={ (element) => lastNameField = element }
                     className="form-control" 
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div className="mb-3">
-                <label for="exampleInputPassword1" className="form-label">Password</label>
-                <input 
-                    type="password" 
-                    ref={ (element) => passwordField = element }
-                    className="form-control" 
-                    id="exampleInputPassword1" 
-                />
-            </div>
-            <div className="mb-3">
-                <label for="exampleInputDob1" className="form-label">Date of Birth</label>
-                <input 
-                    type="text" 
-                    ref={ (element) => dobField = element }
-                    className="form-control" 
-                    id="exampleInputDob1" 
-                    aria-describedby="dobHelp"
-                />
-            </div>
-            <div className="mb-3">
-                <label for="exampleInputphoneNumber1" className="form-label">Phone Number</label>
-                <input 
-                    type="text" 
-                    ref={ (element) => phoneNumberField = element }
-                    className="form-control" 
-                    id="exampleInputphoneNumber1" 
-                    aria-describedby="phoneNumberHelp"
-                />
-            </div>
-            <div className="mb-3">
-                <label for="exampleInputaddress1" className="form-label">Address</label>
-                <input 
-                    type="text" 
-                    ref={ (element) => addressField = element }
-                    className="form-control" 
-                    id="exampleInputaddress1" 
-                    aria-describedby="addressHelp"
-                />
-                
-            </div>
-                     
-            { 
-                (state !== "sending" && state !== "successful") && 
-                <button onClick={register} type="submit" className="btn btn-primary">Submit</button> 
-            }
+                    id="exampleInputLastName1" 
+                    aria-describedby="lastNameHelp"/>
+                </div>
+                <div className="mb-3">
+                    <label for="exampleInputEmail1" className="form-label">Email address</label>
+                    <input 
+                        type="email"
+                        ref={ (element) => emailField = element }
+                        className="form-control" 
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div className="mb-3">
+                    <label for="exampleInputPassword1" className="form-label">Password</label>
+                    <input 
+                        type="password" 
+                        ref={ (element) => passwordField = element }
+                        className="form-control" 
+                        id="exampleInputPassword1" 
+                    />
+                </div>
+                <div className="mb-3">
+                    <label for="exampleInputDob1" className="form-label">Date of Birth</label>
+                    <input 
+                        type="text" 
+                        ref={ (element) => dobField = element }
+                        className="form-control" 
+                        id="exampleInputDob1" 
+                        aria-describedby="dobHelp"
+                    />
+                </div>
+                <div className="mb-3">
+                    <label for="exampleInputphoneNumber1" className="form-label">Phone Number</label>
+                    <input 
+                        type="text" 
+                        ref={ (element) => phoneNumberField = element }
+                        className="form-control" 
+                        id="exampleInputphoneNumber1" 
+                        aria-describedby="phoneNumberHelp"
+                    />
+                </div>
+                <div className="mb-3">
+                    <label for="exampleInputaddress1" className="form-label">Address</label>
+                    <input 
+                        type="text" 
+                        ref={ (element) => addressField = element }
+                        className="form-control" 
+                        id="exampleInputaddress1" 
+                        aria-describedby="addressHelp"
+                    />
+                    
+                </div>
+                        
+                { 
+                    (state !== "sending" && state !== "successful") && 
+                    <button onClick={register} type="submit" className="btn btn-primary">Submit</button> 
+                }
 
-            {
-                state === "sending" && <p>sending...</p>
-            }
+                {
+                    state === "sending" && <p>sending...</p>
+                }
 
-            {
-                state === "successful" && <div className="alert alert-success">Successful</div>
-            }
+                {
+                    state === "successful" && <div className="alert alert-success">Successful</div>
+                }
 
-            {
-                state === "unsuccessful" && <div className="alert alert-danger">Please try again.</div>
-            }
-
+                {
+                    state === "unsuccessful" && <div className="alert alert-danger">Please try again.</div>
+                }
+            </div>
+            <br/>
+            <div><Footer/></div>
         </div>      
+        
     )
 }
 

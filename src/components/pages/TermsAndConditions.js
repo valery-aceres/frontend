@@ -6,7 +6,9 @@ import Footer from '../Footer';
 export default function TermsAndConditions() {
   return (
     <>
+    
     <h1 class="message">Terms and Conditions</h1>
+    <br/>
     <h5><b>Last Updated: March 27, 2021</b></h5>
     <p>Please read these terms and conditions carefully before using Indigo Eagles website operated by Valery and Seyi.</p>
     <h5><b>Conditions of Use</b></h5>
