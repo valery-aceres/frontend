@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Faq from 'react-faq-component';
 import Footer from '../Footer';
-import '../InformationPage.css';
+import '../css/InformationPage.css';
 
 const data = {
   title: "FAQ",

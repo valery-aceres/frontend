@@ -1,5 +1,5 @@
 import React from 'react';
-import '../InformationPage.css';
+import '../css/InformationPage.css';
 import Footer from '../Footer';
 
 
