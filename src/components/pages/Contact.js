@@ -19,8 +19,8 @@ function Contact() {
   }
   return (
     <div>
-    <h1>Get in Touch!</h1>
-    <p>Before submitting the form, please check our <a href="url">FAQ section</a>, you might find an answer to your question there.</p>
+    <h1 className="p-4">Get in Touch!</h1>
+    <p>We're happy to answer questions. We will do our best to respond to you within 24 hours, sometimes a bit longer on weekends. Before submitting the form, please check our <a href="url">FAQ section</a>, you might find an answer to your question there.</p>
     <div className="container" style={{maxWidth: '600px'}}>
       <form onSubmit={handleSubmit} id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqpwqpa" method="post">
         <fieldset id="fs-frm-inputs">
