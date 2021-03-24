@@ -18,15 +18,15 @@ export default function ReturnPolicy() {
     Your satisfaction is our #1 priority. We want you to shop with confidence. That’s why we proudly offer an absolute satisfaction guarantees that ensure you’ll receive your item on time and as described.
     </p>
     <ul className="list">
-    <li className="list">Full refund if you don’t receive your order;</li>
-    <li className="list">Full refund if your order does not arrive within the guaranteed time(3-5 working days);</li>
+    <li>Full refund if you don’t receive your order;</li>
+    <li>Full refund if your order does not arrive within the guaranteed time(3-5 working days);</li>
     </ul>
     <p>
     Full refunds are not available under the following circumstances:
     </p>
     <ul className="list">
-    <li className="list">Your order does not arrive due to factors within your control (e.g. providing the wrong shipping address).</li>
-    <li className="list">Your order does not arrive due to exceptional circumstances outside our control (e.g. not cleared by customs, delayed by a natural disaster).</li>
+    <li>Your order does not arrive due to factors within your control (e.g. providing the wrong shipping address).</li>
+    <li>Your order does not arrive due to exceptional circumstances outside our control (e.g. not cleared by customs, delayed by a natural disaster).</li>
     </ul>
     <p>
     All products are 14-day money back guarantee. Just send us a message on v page or contact us at support@indigoeagles.com and we will refund the purchase price.

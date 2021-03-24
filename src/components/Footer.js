@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
+        <p className='footer-subscription-heading text-center'>
           Subscribe now to receive updates on our new products
         </p>
         <p className='footer-subscription-text'>

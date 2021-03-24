@@ -39,18 +39,19 @@ ul.list {
     list-style-position: inside;
     align-items: center;
     text-align: justify;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     margin-right: 400px;
     margin-left: 400px;
     padding: 3px;
     text-indent: 10px;
-    white-space: normal;
-    float: left;
-    width: 100%;
-    height: auto;
+    /* white-space: normal; */
+    /* float: left; */
+    /* width: 100%; */
+    /* height: auto; */
     word-wrap: break-word;
   }
   
+
   /* Shipping and Delivery Page - Table */
 
 table {
@@ -95,33 +96,45 @@ table th {
   word-wrap: break-word;
 }
 
-/* Mobile Device */
-@media screen and (max-width: 480px) {
-  h1, h5, p {
-    width: 100%;
-    margin-left: 10x;
-    margin-right: 10px;
-    word-wrap: break-word;
-  }
 
-}
 /* Tables */
 @media screen and (max-width: 768px) {
-  h1, h5, p {
-    width: 100%;
-    margin-left: 100px;
+  h1, h5, p, ul.list {
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
     margin-right: 100px;
+    margin-left: 100px;
+    padding: 3px;
+    width: 75%;
     word-wrap: break-word;
+  }
+  table {
+    word-wrap: break-word;
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 75%;
   }
 
 }
 
-@media screen and (max-width: 1400px) {v
-  h1, h5, p {
-    width: 100%;
-    margin-left: 100px;
-    margin-right: 100px;
+@media screen and (max-width: 992px) {
+  h1, h5, p, ul.list {
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 3px;
+    width: 50%;
     word-wrap: break-word;
   }
+  table {
+    word-wrap: break-word;
+    margin-right: 200px;
+    margin-left: 200px;
+    width: 50%;
+  }
+
 }
 
