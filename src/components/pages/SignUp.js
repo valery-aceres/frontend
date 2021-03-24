@@ -23,6 +23,7 @@ const SignUp = () => {
      * "initial", "sending", "successful", "unsuccessful"
      */
     const [ state, setState ] = useState("initial");
+    const [ errorsState, setErrorsState ] = useState([]);
 
     let firstNameField;
     let lastNameField;
@@ -31,6 +32,20 @@ const SignUp = () => {
     let phoneNumberField;
     let dobField;
     let addressField;
+
+
+    //For the form with images
+    const formData = new FormData();
+
+    const attachFile = (evt) => {
+        const files = Array.from(evt.target.files);
+
+        files.forEach(
+            (file, index) => {
+                formData.append(index, file);
+            }
+        )
+    }
 
     const register = () => {
 
@@ -60,28 +75,27 @@ const SignUp = () => {
                 // 2 Show "sending..." and invoke the fetch()
                 setState("sending");
 
+                formData.append("firstName", firstNameField.value);
+                formData.append("lastName", lastNameField.value);
+                formData.append("email", emailField.value);
+                formData.append("password", passwordField.value);
+                formData.append("dob", dobField.value);
+                formData.append("phoneNumber", phoneNumberField.value);
+                formData.append("address", addressField.value);
+
                 fetch(
                     `${process.env.REACT_APP_BACKEND}/users/signup`,
                     {
                         method: 'POST',
-                        headers: {"Content-Type": "application/json"},
-                        body: JSON.stringify(
-                            {
-                                firstName: firstNameField.value,
-                                lastName: lastNameField.value,
-                                email: emailField.value,
-                                password: passwordField.value,
-                                dob: dobField.value,
-                                phoneNumber: phoneNumberField.value,
-                                address: addressField.value
-                            }
-                        )
+                        // headers: {"Content-Type": "application/json"},
+                        body: formData
                     }
                 )
                 // 2.1 If the Promise resolves, setState("successful")
                 .then(
                     () => {
                         setState("successful")
+                        setErrorsState([])
                     }
                 )
                 // 2.1 Else if the Promise rejects, setState("unsuccessful")
@@ -97,6 +111,11 @@ const SignUp = () => {
         <div>
             <div className="container" style={{maxWidth: '600px'}}>
                 <h1 className="mt-4 mb-3">Registration</h1>
+                <div className="mb-3">
+                    <label for="formFile" class="form-label">Upload Avatar</label>
+                    <input 
+                onChange={attachFile} class="form-control" type="file" id="formFile"/>
+                </div>
                 <div className="mb-3">
                     <label for="exampleInputFirstName1" className="form-label">First name</label>
                     <input ref={ (element) => firstNameField = element } type="text" className="form-control" id="exampleInputFirstName1" aria-describedby="firstNameHelp"/>
@@ -177,6 +196,18 @@ const SignUp = () => {
                 {
                     state === "unsuccessful" && <div className="alert alert-danger">Please try again.</div>
                 }
+                {
+                state === "validation failed" && <div className="alert alert-danger">
+                    <ul>
+                    {
+                        errorsState.map(
+                        (error) => <li>{error}</li>
+                        )
+                    }
+                    </ul>
+                    </div>
+            } 
+            
             </div>
             <br/>
             <div><Footer/></div>
