@@ -7,7 +7,11 @@ const SimpleMap = (props) => {
     const [center, setCenter] = useState({lat: 25.077544068375236, lng: 55.14700660459156 });
     const [zoom, setZoom] = useState(11);
     return (
-        <div style={{ height: '100vh', width: '100%' }}>
+      <div>
+        <h1 className="p-5">Our Office location</h1>
+        <h3 className="text-center">Address: Dubai, United Arab Emirates</h3>
+        <h3 className="text-center">Phone: +971 4 123 4567</h3>
+        <div className="m-auto p-5"style={{ height: '100vh', width: '50%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyCZmYES9WZqfl-TRos47XmxZN4ayhcK7nM' }}
           defaultCenter={center}
@@ -20,7 +24,11 @@ const SimpleMap = (props) => {
             color="red"
           />
         </GoogleMapReact>
-        <Footer />
+        </div>
+        
+          <div>
+          <Footer />
+          </div>
       </div>
     );
 }
