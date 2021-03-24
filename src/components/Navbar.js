@@ -72,7 +72,7 @@ function Navbar() {
   
 
   return (
-    
+     <>
       <nav class='navbar-container navbar-dark bg-dark '>
       
       <ul class="menu">
@@ -137,7 +137,7 @@ function Navbar() {
 </nav>
 
      
-     
+    </> 
    
   );
 
