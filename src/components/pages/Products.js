@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import {DataContext} from '../Context'
 import '../css/Products.css'
+import Carousel from 'nuka-carousel';
 import Colors from './Colors'
-import Footer from "../Footer.js"
+
 
 export class Products extends Component {
 
@@ -12,7 +13,18 @@ export class Products extends Component {
     render() {
         const {products,addCart} = this.context;
         return (
+            <div>
+            <div style={{height:"10%"}}>
+            <Carousel >
+                <img src="./images/banner.png" alt="Brands"/>
+
+                <img src="./images/about.png" alt="About" />
+                
+                <img src="./images/contact.png" alt="Contact"/>
+            </Carousel>
+            </div>
           <div>
+            
             <h1 className="text-center p-2">All Products</h1>
             <div id="product">
                {
@@ -35,6 +47,7 @@ export class Products extends Component {
                }
                
             </div>
+          </div>
           </div>
         )
     }
