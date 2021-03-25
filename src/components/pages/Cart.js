@@ -15,7 +15,7 @@ export class Cart extends Component {
     render() {
         const {cart,increase,reduction,removeProduct,total} = this.context;
         if(cart.length === 0){
-            return <div><h2 className="p-5" style={{textAlign:"center"}}>No items in your cart</h2><button className="btn btn-primary mb-4" style={{alignItems: "center"}}>Go Shopping</button></div>
+            return <div><div><h2 className="p-5" style={{textAlign:"center"}}>No items in your cart</h2></div><div className="text-center"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3899203.jpg"/><div><button className="btn btn-primary mb-4">Go Shopping</button></div></div></div>
         }else{
             return (
                 <>
