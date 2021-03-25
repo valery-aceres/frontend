@@ -7,7 +7,7 @@ import '../css/InformationPage.css';
 export default function About() {
   return (
     <>
-    <h1>Track your order</h1>
+    <h1>Track your order!</h1>
     <div>
         <form className = "p-5">
         <label>
@@ -20,4 +20,4 @@ export default function About() {
     {/* <Footer /> */}
   </>
     );
-}
+} 
