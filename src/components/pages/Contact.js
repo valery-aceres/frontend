@@ -17,9 +17,17 @@ function Contact() {
   }
   return (
     <div>
-    <h1 className="p-4">Get in Touch!</h1>
-    <p>We're happy to answer questions. We will do our best to respond to you within 24 hours, sometimes a bit longer on weekends. Before submitting the form, please check our <a href="url">FAQ section</a>, you might find an answer to your question there.</p>
-    <div className="container" style={{maxWidth: '600px'}}>
+      <div class="carousel slide" data-ride="carousel" style={{width:"70%", margin:"auto", marginTop:"100px"}}>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./images/contact.png" alt="Contact"/>
+        </div>
+      </div>
+      </div>
+ 
+    {/* <h1 className="p-4">Get in Touch!</h1> */}
+    <p style={{width:"70%", margin:"auto", marginTop:"30px"}}>We're happy to answer questions. We will do our best to respond to you within 24 hours, sometimes a bit longer on weekends. Before submitting the form, please check our <a href="url">FAQ section</a>, you might find an answer to your question there.</p>
+    <div className="container" style={{width:"70%", margin:"auto", marginTop:"30px"}}>
       <form onSubmit={handleSubmit} id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqpwqpa" method="post">
         <fieldset id="fs-frm-inputs">
           <label for="full-name">Full Name</label>
