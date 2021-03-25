@@ -51,6 +51,7 @@ export default function ShippingAndDelivery() {
         <p>You will receive an email with a tracking number once your order is shipped but sometimes due to free shipping tracking is not available. For logistical reasons, items in the same purchase may be sent in separate packages even if you’ve specified combined shipping.</p>
         <p>If you have any other questions, please <a href="/contact"> contact us</a> and we will do our best to help you out.</p>
     {/* <Footer /> */}
+    <br/>
   </>
     );
 }

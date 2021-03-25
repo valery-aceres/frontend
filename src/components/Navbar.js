@@ -27,7 +27,7 @@ export class Navbar extends Component {
                     <i className="fas fa-bars"></i>
                 </div>
                 <div className="logo">
-                <a href="/">Indigo Eagles <i className='fab fa-phoenix-framework' /> </a> 
+                <a href="/"><b>Indigo Eagles</b> <i className='fab fa-phoenix-framework' /> </a> 
                 </div>
                 <nav>
                     <ul className={toggle ? "toggle" : ""}>
@@ -35,7 +35,7 @@ export class Navbar extends Component {
                         <li><Link to="/products">Products</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                         <li><Link to="/about">About</Link></li>
-                        <li><Link to="/login">Login / Register</Link></li>
+                        <li><Link to="/signin">Signin / Register</Link></li>
                         <li className="close" onClick={this.menuToggle}>
                             <i className="fas fa-times"></i>
                         </li>

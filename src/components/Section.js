@@ -5,6 +5,8 @@ import Details from './pages/Details'
 import {Route} from "react-router-dom"
 import Cart from './pages/Cart'
 import Payment from './pages/Payment'
+import Signin from './pages/SignIn'
+import SignUp from './pages/SignUp'
 // Footer Links
 import About from './pages/About'
 import TermsAndConditions from './pages/TermsAndConditions'
@@ -29,8 +31,8 @@ export class Section extends Component {
                     <Route path="/product/:id" component={Details} exact />
                     <Route path="/cart" component={Cart}  exact/>
                     <Route path="/payment" component={Payment} exact />
-
-
+                    <Route path="/signin" component={Signin} exact />
+                    <Route path="/signup" component={SignUp} exact />
                     <Route path="/about" component={About} exact />
                     <Route path="/termsandconditions" component={TermsAndConditions} exact />
                     <Route path="/privacypolicy" component={PrivacyPolicy} exact />

@@ -9,9 +9,7 @@ const Location = (props) => {
     return (
       <div>
         <h1 className="p-3">Our Office location</h1>
-        <h3 className="text-center">Address: Dubai, United Arab Emirates</h3>
-        <h3 className="text-center">Phone: +971 4 123 4567</h3>
-        <div className="m-auto p-5"style={{ height: '100vh', width: '100%' }}>
+        <div className="m-auto"style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyCZmYES9WZqfl-TRos47XmxZN4ayhcK7nM' }}
           defaultCenter={center}

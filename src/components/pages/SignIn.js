@@ -78,10 +78,11 @@ const SignIn = () => {
     return (
         <div>
             <div className="container" style={{maxWidth: '600px'}}>
-                <h1 className="mt-4 mb-3">Sign In</h1>
+                <h1 className="mt-2 mb-2">Sign In</h1>
                 <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Email address</label>
                     <input 
+                        style={{borderRadius:"20px"}}
                         type="email"
                         ref={ (element) => emailField = element }
                         className="form-control" 
@@ -91,7 +92,8 @@ const SignIn = () => {
                 </div>
                 <div className="mb-3">
                     <label for="exampleInputPassword1" className="form-label">Password</label>
-                    <input 
+                    <input  
+                        style={{borderRadius:"20px"}}
                         type="password" 
                         ref={ (element) => passwordField = element }
                         className="form-control" 
@@ -101,7 +103,7 @@ const SignIn = () => {
                         
                 { 
                     (state !== "sending" && state !== "successful") && 
-                    <button onClick={register} type="submit" className="btn btn-primary">Submit</button> 
+                    <button style={{borderRadius:"20px"}} onClick={register} type="submit" className="btn btn-primary">Submit</button> 
                 }
 
                 {
@@ -115,8 +117,12 @@ const SignIn = () => {
                 {
                     state === "unsuccessful" && <div className="alert alert-danger">Invalid Credentials.</div>
                 }
+            
+            <p className="m-auto pt-4">Not yet registered?</p>
+            <a className="mb-3" href="/signup">Create an Account</a>
             </div>
             <br/>
+            
             {/* <div><Footer/></div> */}
         </div>      
         

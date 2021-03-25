@@ -110,19 +110,20 @@ const SignUp = () => {
     return (
         <div>
             <div className="container" style={{maxWidth: '600px'}}>
-                <h1 className="mt-4 mb-3">Registration</h1>
+                <h1 className="mt-2 mb-2">Registration</h1>
                 <div className="mb-3">
                     <label for="formFile" class="form-label">Upload Avatar</label>
-                    <input 
+                    <input  style={{borderRadius:"20px"}}
                 onChange={attachFile} class="form-control" type="file" id="formFile"/>
                 </div>
                 <div className="mb-3">
                     <label for="exampleInputFirstName1" className="form-label">First name</label>
-                    <input ref={ (element) => firstNameField = element } type="text" className="form-control" id="exampleInputFirstName1" aria-describedby="firstNameHelp"/>
+                    <input style={{borderRadius:"20px"}} ref={ (element) => firstNameField = element } type="text" className="form-control" id="exampleInputFirstName1" aria-describedby="firstNameHelp"/>
                 </div>
                 <div className="mb-3">
                     <label for="exampleInputLastName1" className="form-label">Last name</label>
                     <input type="text" 
+                    style={{borderRadius:"20px"}}
                     ref={ (element) => lastNameField = element }
                     className="form-control" 
                     id="exampleInputLastName1" 
@@ -131,6 +132,7 @@ const SignUp = () => {
                 <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Email address</label>
                     <input 
+                        style={{borderRadius:"20px"}}
                         type="email"
                         ref={ (element) => emailField = element }
                         className="form-control" 
@@ -142,6 +144,7 @@ const SignUp = () => {
                 <div className="mb-3">
                     <label for="exampleInputPassword1" className="form-label">Password</label>
                     <input 
+                        style={{borderRadius:"20px"}}
                         type="password" 
                         ref={ (element) => passwordField = element }
                         className="form-control" 
@@ -151,6 +154,7 @@ const SignUp = () => {
                 <div className="mb-3">
                     <label for="exampleInputDob1" className="form-label">Date of Birth</label>
                     <input 
+                        style={{borderRadius:"20px"}}
                         type="text" 
                         ref={ (element) => dobField = element }
                         className="form-control" 
@@ -161,6 +165,7 @@ const SignUp = () => {
                 <div className="mb-3">
                     <label for="exampleInputphoneNumber1" className="form-label">Phone Number</label>
                     <input 
+                        style={{borderRadius:"20px"}}
                         type="text" 
                         ref={ (element) => phoneNumberField = element }
                         className="form-control" 
@@ -171,6 +176,7 @@ const SignUp = () => {
                 <div className="mb-3">
                     <label for="exampleInputaddress1" className="form-label">Address</label>
                     <input 
+                        style={{borderRadius:"20px"}}
                         type="text" 
                         ref={ (element) => addressField = element }
                         className="form-control" 
@@ -182,7 +188,7 @@ const SignUp = () => {
                         
                 { 
                     (state !== "sending" && state !== "successful") && 
-                    <button onClick={register} type="submit" className="btn btn-primary">Submit</button> 
+                    <button  style={{borderRadius:"20px"}} onClick={register} type="submit" className="btn btn-primary">Submit</button> 
                 }
 
                 {
@@ -207,10 +213,12 @@ const SignUp = () => {
                     </ul>
                     </div>
             } 
-            
+            <p className="m-auto pt-4">Already have an account?</p>
+            <a className="mb-3" href="/signup">Please Login</a>
             </div>
-            {/* <div><Footer/></div> */}
+            <br/>
         </div>      
+        
         
     )
 }

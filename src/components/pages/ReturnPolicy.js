@@ -5,8 +5,9 @@ import '../css/InformationPage.css';
 
 export default function ReturnPolicy() {
   return (
-    <>
+    <div>
     <h1 class="message">Refunds and Return Policy</h1>
+    <div className="p-4">
     <h5><b>Order cancellation</b></h5>
     <p>
     All orders can be canceled until they are shipped. If your order has been paid and you need to change or cancel it, please contact us within 12 hours.</p>
@@ -44,9 +45,9 @@ export default function ReturnPolicy() {
     <p>
     Please do not send your purchase back to us unless we authorize you to do so.
     </p>
-
+    </div>
     {/* <Footer /> */}
-  </>
+  </div>
     );
 }
 

@@ -38,6 +38,7 @@ export default function PrivacyPolicy() {
     <p>We are doing our best to guarantee the security of your personal details while keeping and using them.</p>
     <p>Thank you for your cooperation!</p>
     {/* <Footer /> */}
+    <br/>
   </>
     );
 }
