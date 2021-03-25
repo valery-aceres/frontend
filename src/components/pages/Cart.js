@@ -31,8 +31,8 @@ export class Cart extends Component {
                                         <span>AED {item.price * item.count}</span>
                                     </div>
                                     <Colors colors={item.colors}/>
-                                    <p>{item.description}</p>
-                                    <p>{item.content}</p>
+                                    
+                                    <p>{item.title}</p>
                                     <div className="amount">
                                         <button className="count" onClick={() => reduction(item._id)}> - </button>
                                         <span>{item.count}</span>

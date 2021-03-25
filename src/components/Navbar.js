@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import './css/Navbar.css'
 import {DataContext} from './Context'
-
+// import './css/Details.css'
+// import './css/Cart.css'
 
 
 export class Navbar extends Component {
@@ -33,17 +34,18 @@ export class Navbar extends Component {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/products">Products</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
-                        {/* <li><Link to="/about">About</Link></li> */}
+                        <li><Link to="/about">About</Link></li>
                         <li><Link to="/login">Login / Register</Link></li>
                         <li className="close" onClick={this.menuToggle}>
                             <i className="fas fa-times"></i>
                         </li>
                     </ul>
                     <div className="nav-cart">
-                        <span>{cart.length}</span>
+                        
                         <Link to="/cart">
-                            <i className="fas fa-shopping-cart"></i>
+                            <i className="fas fa-shopping-cart"><sup style={{color:"white", backgroundColor: "grey"}}>{cart.length}</sup></i>              
                         </Link>
+                       
                     </div>
                 </nav>
             </header>
