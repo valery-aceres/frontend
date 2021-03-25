@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/InformationPage.css';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 
 export default function ReturnPolicy() {
@@ -45,7 +45,7 @@ export default function ReturnPolicy() {
     Please do not send your purchase back to us unless we authorize you to do so.
     </p>
 
-    <Footer />
+    {/* <Footer /> */}
   </>
     );
 }

@@ -1,80 +1,54 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import './css/Navbar.css';
+import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
+import './css/Navbar.css'
+import {DataContext} from './Context'
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
+export class Navbar extends Component {
+    static contextType = DataContext;
+
+    state = {
+        toggle: false
     }
-  };
 
-  useEffect(() => {
-    showButton();
-  }, []);
+    menuToggle = () =>{
+        this.setState({toggle: !this.state.toggle})
+    }
 
-  window.addEventListener('resize', showButton);
 
-  return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Indigo Eagles
-            <i class='fab fa-phoenix-framework' />
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Products
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/contact'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
-        </div>
-      </nav>
-    </>
-  );
+    render() {
+        const {toggle} = this.state;
+        const {cart} = this.context;
+        return (
+            <header className="header-dark bg-dark">
+                <div className="menu" onClick={this.menuToggle}>
+                    <i className="fas fa-bars"></i>
+                </div>
+                <div className="logo">
+                <a href="/">Indigo Eagles <i className='fab fa-phoenix-framework' /> </a> 
+                </div>
+                <nav>
+                    <ul className={toggle ? "toggle" : ""}>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/products">Products</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                        {/* <li><Link to="/about">About</Link></li> */}
+                        <li><Link to="/login">Login / Register</Link></li>
+                        <li className="close" onClick={this.menuToggle}>
+                            <i className="fas fa-times"></i>
+                        </li>
+                    </ul>
+                    <div className="nav-cart">
+                        <span>{cart.length}</span>
+                        <Link to="/cart">
+                            <i className="fas fa-shopping-cart"></i>
+                        </Link>
+                    </div>
+                </nav>
+            </header>
+        )
+    }
 }
 
-export default Navbar;
+export default Navbar

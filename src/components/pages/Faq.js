@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Faq from 'react-faq-component';
-import Footer from '../Footer';
+// import Footer from '../Footer';
+import ChatBot from '../ChatBot';
 import '../css/InformationPage.css';
 
 const data = {
@@ -52,7 +53,7 @@ const data = {
       // rowContentColor: 'grey',
       rowContentTextSize: '16px',
       // rowContentPaddingTop: '10px',
-      rowContentPaddingBottom: '10px',
+      rowContentPaddingBottom: '50px',
       rowContentPaddingLeft: '50px',
     }
 }
@@ -62,7 +63,8 @@ export default class App extends Component {
     return (
       <div>
         <Faq data={data}/>
-        <Footer />
+        {/* <Footer /> */}
+        <ChatBot />
       </div>
       
     )

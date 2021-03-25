@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 import './css/Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+
 
 function Footer() {
   return (
@@ -35,7 +36,6 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
           <h2>Orders</h2>
-            <Link to='/account'>My Account</Link>
             <Link to='/shippinganddelivery'>Shipping and Delivery</Link>
             <Link to='/returnpolicy'>Return Policy</Link>
             <Link to='/faq'>FAQs</Link>
@@ -45,7 +45,7 @@ function Footer() {
           <div class='footer-link-items'>
           <h2>Contact</h2>
             <Link to='/contact'>Contact</Link>
-            <Link to='/productsupport'>Product Support</Link>
+            {/* <Link to='/productsupport'>Product Support</Link> */}
             <Link to='/ordersupport'>Order Tracking</Link>
             <Link to='/location'>Location</Link>
           </div>

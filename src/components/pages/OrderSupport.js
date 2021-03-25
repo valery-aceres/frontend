@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/InformationPage.css';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 
 
@@ -9,7 +9,7 @@ export default function About() {
     <>
     <h1>Track your order</h1>
     <div>
-        <form className = "form">
+        <form className = "p-5">
         <label>
             Order Number/Email Address:
             <input type="text" placeholder="enter your information" />
@@ -17,7 +17,7 @@ export default function About() {
         <button>Submit</button> 
         </form>
     </div>
-    <Footer />
+    {/* <Footer /> */}
   </>
     );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from '../Marker';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 const Location = (props) => {
     const [center, setCenter] = useState({lat: 25.077544068375236, lng: 55.14700660459156 });
@@ -27,7 +27,7 @@ const Location = (props) => {
         </div>
         
           <div>
-          <Footer />
+          {/* <Footer /> */}
           </div>
       </div>
     );

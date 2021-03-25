@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/InformationPage.css';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 
 export default function PrivacyPolicy() {
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
     </ul>
     <p>We are doing our best to guarantee the security of your personal details while keeping and using them.</p>
     <p>Thank you for your cooperation!</p>
-    <Footer />
+    {/* <Footer /> */}
   </>
     );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/Contact.css';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 import { useForm, ValidationError } from '@formspree/react';
 
 
@@ -12,8 +12,6 @@ function Contact() {
     <div>
     <a href="/" class="btn btn-primary">Go back to home</a>
     </div>
-    <br/>
-    <Footer />
     </div>;
     
   }
@@ -42,7 +40,7 @@ function Contact() {
       
     </div>
       <br/>
-      <div><Footer /></div>
+      {/* <div><Footer /></div> */}
     </div>
   );
 };

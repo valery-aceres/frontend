@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/InformationPage.css';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 
 export default function TermsAndConditions() {
@@ -32,7 +32,7 @@ export default function TermsAndConditions() {
     <p>We grant you a limited license to access and make personal use of this website. You are not allowed to download or modify it. This may be done only with written consent from us.</p>
     <h5><b>User Account</b></h5>
     <p>If you are an owner of an account on this website, you are solely responsible for maintaining the confidentiality of your private user details (username and password). You are responsible for all activities that occur under your account or password. We reserve all rights to terminate accounts, edit or remove content and cancel orders in their sole discretion.</p>
-    <Footer />
+    {/* <Footer /> */}
   </>
     );
 }
