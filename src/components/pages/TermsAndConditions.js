@@ -5,10 +5,11 @@ import '../css/InformationPage.css';
 
 export default function TermsAndConditions() {
   return (
-    <>
+    <div>
     
     <h1 class="message">Terms and Conditions</h1>
     <br/>
+    <div  className="m-5">
     <h5><b>Last Updated: March 27, 2021</b></h5>
     <p>Please read these terms and conditions carefully before using Indigo Eagles website operated by Valery and Seyi.</p>
     <h5><b>Conditions of Use</b></h5>
@@ -33,7 +34,8 @@ export default function TermsAndConditions() {
     <h5><b>User Account</b></h5>
     <p>If you are an owner of an account on this website, you are solely responsible for maintaining the confidentiality of your private user details (username and password). You are responsible for all activities that occur under your account or password. We reserve all rights to terminate accounts, edit or remove content and cancel orders in their sole discretion.</p>
     {/* <Footer /> */}
-  </>
+    </div>
+  </div>
     );
 }
 

@@ -9,8 +9,8 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/phone.mp4' autoPlay loop muted />
-      <h1>QUALITY AT THE BEST PRICE</h1>
-      <p>What are you waiting for?</p>
+      <h1 className="mx-auto text-center mt-1">QUALITY AT THE BEST PRICE</h1>
+      <p className="mx-auto text-center mt-1">What are you waiting for?</p>
       <div className='hero-btns'>
         <Button
           className='btns'

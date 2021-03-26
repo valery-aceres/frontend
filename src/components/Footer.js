@@ -11,7 +11,7 @@ function Footer() {
         <p className='footer-subscription-heading text-center'>
           Subscribe now to receive updates on our new products
         </p>
-        <p className='footer-subscription-text'>
+        <p className='footer-subscription-text mx-auto text-center mt-1"'>
           You can unsubscribe at any time.
         </p>
         <div className='input-areas'>

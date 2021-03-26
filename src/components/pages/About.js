@@ -16,17 +16,17 @@ export default function About() {
       </div>
     </div>
     <h1>OUR Team</h1>
-    <div className="row">
-      <div class="card" style={{width: "18rem"}}>
+    <div className="row mb-5">
+      <div class="card col" style={{width: "50%", padding:"0"}}>
         <img class="card-img-top" src="./images/val.jpg" alt="Valery"/>
           <div class="card-body">
             <p class="card-text">Valery Aceres</p>
           </div>
       </div>
-      <div class="card" style={{width: "18rem"}}>
-        <img class="card-img-top" src="..." alt="Seyi"/>
+      <div class="card col" style={{width: "50%",padding:"0" }}>
+        <img class="card-img-top" src="./images/seyi.jpg" alt="Seyi"/>
           <div class="card-body">
-            <p class="card-text">Seyi Ekinyemi</p>
+            <p class="card-text">Seyi Akinyemi</p>
           </div>
       </div>
     </div>

@@ -118,8 +118,10 @@ const SignIn = () => {
                     state === "unsuccessful" && <div className="alert alert-danger">Invalid Credentials.</div>
                 }
             
-            <p className="m-auto pt-4">Not yet registered?</p>
-            <a className="mb-3" href="/signup">Create an Account</a>
+            <p className="m-auto text-center">Not yet registered?</p>
+            <div className="m-auto text-center">
+            <a  href="/signup">Create an Account</a>
+            </div>
             </div>
             <br/>
             

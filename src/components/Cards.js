@@ -5,7 +5,7 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'> 
-      <h1>Check out Featured Products!</h1>
+      <h1 className="mx-auto text-center mt-1">Check out Featured Products!</h1>
       <div className='row' > {/*//formerly 'cards__container'  */}
         <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
           <ul className='card-body'> {/*//formerly 'cards__items'  */}

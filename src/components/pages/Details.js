@@ -31,7 +31,7 @@ export class Details extends Component {
 
     render() {
         const {product} = this.state;
-        const {addCart, reduction, increase, cart} = this.context;
+        const {addCart} = this.context;
         return (
             <>
                 {
@@ -71,14 +71,14 @@ export class Details extends Component {
                                 <List list={item.description}/>
                                 <br/>
                                 <div className="row">
-                                <Link to="/cart" className="cart" style={{width:"30%", margin:"auto"}} onClick={() => addCart(item._id)}>
+                                <Link to="/cart" className="cart text-center" onClick={() => addCart(item._id)}>
                                     Add to cart
                                 </Link>
-                                    <div className="amount" style={{width:"50%", margin: "auto"}}>
+                                    {/* <div className="amount" style={{width:"50%", margin: "auto"}}>
                                         <button  className="count" onClick={() => reduction(item._id)}> - </button>
                                         <span>{item.count}</span>
                                         <button className="count" onClick={() => increase(item._id)}> + </button>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

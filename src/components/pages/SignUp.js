@@ -213,8 +213,10 @@ const SignUp = () => {
                     </ul>
                     </div>
             } 
-            <p className="m-auto pt-4">Already have an account?</p>
-            <a className="mb-3" href="/signup">Please Login</a>
+            <p className="m-auto text-center">Already have an account?</p>
+            <div className="m-auto text-center">
+                <a  href="/signup">Please Login</a>
+            </div>
             </div>
             <br/>
         </div>      
