@@ -188,7 +188,7 @@ export class DataProvider extends Component {
             },
             {
                 "_id": "9",
-                "title": "Samsung Galaxy Note 20",
+                "title": "Samsung Note 20",
                 "src": "../images/Samsung/samsungnote20_mysticbronze1.jpg",
                 "src2": "../images/Samsung/samsungnote20_mysticbronze2.jpg",
                 "src3": "../images/Samsung/samsungnote20_mysticbronze3.jpg",

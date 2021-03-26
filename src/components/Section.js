@@ -19,7 +19,8 @@ import Contact from './pages/Contact'
 import OrderSupport from './pages/OrderSupport'
 import Location from './pages/Location'
 // import Signup from './pages/Signup'
-
+// Product listing 
+import ProductCreation from './pages/ProductCreation'
 
 export class Section extends Component {
     render() {
@@ -43,8 +44,9 @@ export class Section extends Component {
                     {/* <Route path="/productsupport" component={ProductSupport} exact />  */}
                     <Route path="/ordersupport" component={OrderSupport} exact /> 
                     <Route path="/location" component={Location} exact /> 
+                    {/* Product Listing */}
+                    <Route path="/productcreation" component={ProductCreation} exact /> 
 
-                    {/* {/* <Route path="/signup" component={Signup} exact /> */}
             </section>
         )
     }

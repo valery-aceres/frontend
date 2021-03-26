@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {DataContext} from '../Context'
 import '../css/Products.css'
 import Carousel from 'nuka-carousel';
-import Colors from './Colors'
+
 
 
 export class Products extends Component {
@@ -25,7 +25,7 @@ export class Products extends Component {
             </div>
           <div>
             
-            <h1 className="text-center p-2">All Products</h1>
+            <h1 className="text-center p-5">All Products</h1>
             <div id="product">
                {
                    products.map(product =>(
@@ -40,9 +40,10 @@ export class Products extends Component {
                                <p className="m-0 text-muted "><i><s>Before: AED {product.discount}</s></i></p>
                                <span>Now: AED {product.price}</span>
                                <p> {product.brand}</p>
+
+                                </div>
                                <button onClick={()=> addCart(product._id)}>Add to cart</button>
                            </div>
-                       </div>
                    ))
                }
                

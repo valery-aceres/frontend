@@ -7,10 +7,10 @@ import { useForm, ValidationError } from '@formspree/react';
 function Contact() {
     const [state, handleSubmit] = useForm('xeqpwqpa');
     if (state.succeeded) {
-      return <div>Thank you for your message! 
-      <br/>
+      return <div style={{width: "100%", margin: "auto", padding: "300px", textAlign:"center", borderRadius: "20px"}}><h1 className="p-2">Thank you for your message! </h1>
+      <br/> 
       <div>
-      <a href="/" class="btn btn-primary">Go back to home</a>
+      <a href="/" class="btn btn-primary m-auto">Go back to Home</a>
       </div>
       </div>;
       

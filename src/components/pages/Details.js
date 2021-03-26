@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import Colors from './Colors'
 import List from './List'
 import '../css/Details.css'
+import '../css/Cart.css'
 import Carousel from 'nuka-carousel';
 
 export class Details extends Component {
@@ -30,7 +31,7 @@ export class Details extends Component {
 
     render() {
         const {product} = this.state;
-        const {addCart} = this.context;
+        const {addCart, reduction, increase, cart} = this.context;
         return (
             <>
                 {
@@ -69,9 +70,16 @@ export class Details extends Component {
                                 <p><b>About this item</b></p>
                                 <List list={item.description}/>
                                 <br/>
-                                <Link to="/cart" className="cart" onClick={() => addCart(item._id)}>
+                                <div className="row">
+                                <Link to="/cart" className="cart" style={{width:"30%", margin:"auto"}} onClick={() => addCart(item._id)}>
                                     Add to cart
                                 </Link>
+                                    <div className="amount" style={{width:"50%", margin: "auto"}}>
+                                        <button  className="count" onClick={() => reduction(item._id)}> - </button>
+                                        <span>{item.count}</span>
+                                        <button className="count" onClick={() => increase(item._id)}> + </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     ))

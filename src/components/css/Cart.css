@@ -18,10 +18,14 @@ section .cart{
 .delete{
     position: absolute;
     top:0;
-    right: 5px;
-    color: crimson;
+    right: 0;
+    background-color: black;
+    color: white;
     cursor: pointer;
     font-weight: 900;
+    padding-left: 10px;
+    padding-right: 10px;
+  
 }
 .total{
     width: 100%;
