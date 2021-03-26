@@ -132,7 +132,6 @@ const ProductCreation = () => {
                 formData.append("box", boxField.value);
                 formData.append("weight", weightField.value);
                 formData.append("model", modelField.value);
-                formData.append("brand", brandField.value);
                 formData.append("description", descriptionField.value);
                 formData.append("discount", discountField.value);
                 formData.append("price", priceField.value);
