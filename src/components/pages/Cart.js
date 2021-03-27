@@ -15,15 +15,15 @@ export class Cart extends Component {
     render() {
         const {cart,increase,reduction,removeProduct,total} = this.context;
         if(cart.length === 0){
-            return <div><div><h2 className="p-5" style={{textAlign:"center"}}>No items in your cart</h2></div><div className="text-center"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3899203.jpg"/><div><button className="btn btn-primary mb-4">Go Shopping</button></div></div></div>
+            return <div><div><h2 className="p-5" style={{textAlign:"center"}}>No items in your cart</h2></div><div className="text-center"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3899203.jpg"/><div><button className="btn btn-primary mb-4" style={{backgroundColor:"limegreen", borderRadius:"20px", width:"20%"}}>Go Shopping</button></div></div></div>
         }else{
             return (
                 <>
-                    <h1 className="p-4">Shopping Cart</h1>
+                    <h1 className="p-4">Shopping Cart <i style={{color:"limegreen"}}class="fas fa-shopping-cart"></i></h1>
                     {
                         
                         cart.map(item =>(
-                            <div className="details cart" key={item._id}>
+                            <div className="details cart border-0" key={item._id}>
                                 <img style={{margin:"20px"}} src={item.src} alt=""/>
                                 <div className="box" >
                                     <div className="row" style={{marginTop:"100px"}} >
@@ -50,7 +50,8 @@ export class Cart extends Component {
                         ))
                     }
                     <div className="total">
-                        <Link to="/payment">Checkout</Link>
+                        <Link to="/checkout">Checkout</Link>
+                        <h1 className="mt-2"><i class="fab fa-cc-mastercard"></i> <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-paypal"></i></h1>
                         <h3>Total: AED{total}</h3>
                     </div>
                 </>

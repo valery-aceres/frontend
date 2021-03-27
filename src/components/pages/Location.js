@@ -8,7 +8,7 @@ const Location = (props) => {
     const [zoom, setZoom] = useState(11);
     return (
       <div>
-        <h1 className="p-3">Our Office location</h1>
+        <h1 className="p-3 text-center" style={{ margin: 'auto'}}>Our Office location <i style={{color:"limegreen"}} class="fas fa-map-marked-alt"></i></h1>
         <div className="m-auto"style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyCZmYES9WZqfl-TRos47XmxZN4ayhcK7nM' }}

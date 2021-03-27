@@ -82,5 +82,5 @@ header .close{
 
 /* Icons */
 .fa-shopping-cart, .fa-bars, .fa-times {
-  color: white;
+  color: rgb(255, 255, 255);
 }

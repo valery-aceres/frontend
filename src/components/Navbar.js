@@ -43,7 +43,7 @@ export class Navbar extends Component {
                     <div className="nav-cart">
                         
                         <Link to="/cart">
-                            <i className="fas fa-shopping-cart"><sup style={{color:"white", backgroundColor: "grey"}}>{cart.length}</sup></i>              
+                            <i className="fas fa-shopping-cart"><sup style={{color:"lightseagreen", fontSize:"12px", fontWeight:"1000"}}>{cart.length}</sup></i>              
                         </Link>
                        
                     </div>

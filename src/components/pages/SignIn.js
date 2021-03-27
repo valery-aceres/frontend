@@ -76,9 +76,9 @@ const SignIn = () => {
     }
 
     return (
-        <div>
+        <div style={{paddingTop:"100px", paddingBottom:"100px"}}>
             <div className="container" style={{maxWidth: '600px'}}>
-                <h1 className="mt-2 mb-2">Sign In</h1>
+                <h1 className="mb-2">Sign In <i className="fas fa-sign-in-alt"style={{color:"limegreen"}}></i></h1>
                 <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Email address</label>
                     <input 
@@ -99,33 +99,31 @@ const SignIn = () => {
                         className="form-control" 
                         id="exampleInputPassword1" 
                     />
+                    </div>
+                            
+                    { 
+                        (state !== "sending" && state !== "successful") && 
+                        <button style={{borderRadius:"20px", backgroundColor:"limegreen"}} onClick={register} type="submit" className="btn btn-primary">Submit</button> 
+                    }
+
+                    {
+                        state === "sending" && <p>Sending...</p>
+                    }
+
+                    {
+                        state === "successful" && <div className="alert alert-success">Log in Successful</div>
+                    }
+
+                    {
+                        state === "unsuccessful" && <div className="alert alert-danger">Invalid Credentials.</div>
+                    }
+                
+                <p className="m-auto text-center">Not yet registered?</p>
+                <div className="m-auto text-center">
+                <a  href="/signup">Create an Account</a>
                 </div>
-                        
-                { 
-                    (state !== "sending" && state !== "successful") && 
-                    <button style={{borderRadius:"20px"}} onClick={register} type="submit" className="btn btn-primary">Submit</button> 
-                }
-
-                {
-                    state === "sending" && <p>Sending...</p>
-                }
-
-                {
-                    state === "successful" && <div className="alert alert-success">Log in Successful</div>
-                }
-
-                {
-                    state === "unsuccessful" && <div className="alert alert-danger">Invalid Credentials.</div>
-                }
-            
-            <p className="m-auto text-center">Not yet registered?</p>
-            <div className="m-auto text-center">
-            <a  href="/signup">Create an Account</a>
-            </div>
             </div>
             <br/>
-            
-            {/* <div><Footer/></div> */}
         </div>      
         
     )

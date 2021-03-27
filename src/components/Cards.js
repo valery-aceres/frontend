@@ -10,8 +10,8 @@ function Cards() {
         <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
           <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
-              src='https://goodmockups.com/wp-content/uploads/2018/09/Free-iPhone-Xs-Xs-Max-Mockup-PSD-Set.jpg'
-              text="Iphone 12"
+              src='https://techonthego.co.uk/wp-content/uploads/2020/10/new-iphone-12-featured.png'
+              text="Life is easier with on iPhone"
               label='APPLE'
               path='/products'
             />
@@ -21,8 +21,8 @@ function Cards() {
           <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
           <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
-              src='https://4.img-dpreview.com/files/p/articles/7781318523/Samsung_S20_Lineup_2.jpeg'
-              text='Samsung S20'
+              src='https://i.ytimg.com/vi/PwNqrrFsprM/maxresdefault.jpg'
+              text='Do bigger things with Samsung'
               label='SAMSUNG'
               path='/products'
             />
@@ -32,8 +32,8 @@ function Cards() {
           <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
           <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
-              src='https://i.pinimg.com/originals/7d/b5/ea/7db5ea88428f9c7b6b2a1fc781f5706a.png'
-              text="Huawei Mate X"
+              src='https://www.alhaddadshop.com/Content/Nova3i/sa-en-nova3i/img/nova3i_herobanner_mobile.jpg'
+              text="Connecting the Future"
               label='HUAWEI'
               path='/products'
             />
@@ -43,8 +43,8 @@ function Cards() {
           <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
           <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
-              src='https://shop.ee.co.uk/content/dam/everything-everywhere/images/HuaweiP40Pro/Huawei_Hub_P40_LargePromo_1156x648.jpg.eeimg.640.360.high.jpg/1588156403045.jpg'
-              text='Google Pixel 6'
+              src='https://9to5google.com/wp-content/uploads/sites/4/2016/10/pixel-cw-1.png?w=1000'
+              text="Make GOOGLE do it!"
               label='GOOGLE'
               path='/products'
             />
@@ -54,8 +54,8 @@ function Cards() {
           <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
           <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
-              src='https://www.metrobyt-mobile.com/content/dam/mpcs/phones/190198790392/learn_tab/iphoneXsMax-hero-banner_mobile.jpg'
-              text='Nokia 5.4'
+              src='https://us.v-cdn.net/6031042/uploads/editor/2o/7y6q77m00c32.png'
+              text='Connecting People'
               label='NOKIA'
               path='/products'
             />
@@ -65,9 +65,9 @@ function Cards() {
         <div className='col-12 col-md-6 col-lg-4'> {/*//formerly 'cards__wrapper'*/}
           <ul className='card-body'> {/*//formerly 'cards__items'  */}
             <CardItem
-              src='https://digitalmore.co/wp-content/uploads/2018/07/Find-X-KV.jpg'
-              text='Google Pixel 6'
-              label='GOOGLE'
+              src='https://i.gadgets360cdn.com/large/oppoa92020_main_1568105220106.jpg'
+              text='Capture the real you'
+              label='OPPO'
               path='/products'
             />
             </ul>

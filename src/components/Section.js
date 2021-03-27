@@ -4,7 +4,8 @@ import Products from './pages/Products'
 import Details from './pages/Details'
 import {Route} from "react-router-dom"
 import Cart from './pages/Cart'
-import Payment from './pages/Payment'
+import Checkout from './pages/Checkout'
+import PaymentForm from './pages/PaymentForm'
 import Signin from './pages/SignIn'
 import SignUp from './pages/SignUp'
 // Footer Links
@@ -31,7 +32,7 @@ export class Section extends Component {
                     <Route path="/products" component={Products} exact  />
                     <Route path="/product/:id" component={Details} exact />
                     <Route path="/cart" component={Cart}  exact/>
-                    <Route path="/payment" component={Payment} exact />
+                    <Route path="/checkout" component={Checkout} exact />
                     <Route path="/signin" component={Signin} exact />
                     <Route path="/signup" component={SignUp} exact />
                     <Route path="/about" component={About} exact />

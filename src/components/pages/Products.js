@@ -15,7 +15,7 @@ export class Products extends Component {
         return (
             <div>
             <div style={{height:"10%"}}>
-            <Carousel >
+            <Carousel>
                 <img src="./images/banner.png" alt="Brands"/>
 
                 <img src="./images/about.png" alt="About" />

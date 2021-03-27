@@ -110,7 +110,7 @@ const SignUp = () => {
     return (
         <div>
             <div className="container" style={{maxWidth: '600px'}}>
-                <h1 className="mt-2 mb-2">Registration</h1>
+                <h1 className="mt-2 mb-2">Registration <i className="fas fa-file-signature"style={{color:"limegreen"}}></i></h1>
                 <div className="mb-3">
                     <label for="formFile" class="form-label">Upload Avatar</label>
                     <input  style={{borderRadius:"20px"}}
@@ -188,7 +188,7 @@ const SignUp = () => {
                         
                 { 
                     (state !== "sending" && state !== "successful") && 
-                    <button  style={{borderRadius:"20px"}} onClick={register} type="submit" className="btn btn-primary">Submit</button> 
+                    <button  style={{borderRadius:"20px", backgroundColor:"limegreen"}} onClick={register} type="submit" className="btn btn-primary">Submit</button> 
                 }
 
                 {
@@ -215,7 +215,7 @@ const SignUp = () => {
             } 
             <p className="m-auto text-center">Already have an account?</p>
             <div className="m-auto text-center">
-                <a  href="/signup">Please Login</a>
+                <a href="/signin">Please Login</a>
             </div>
             </div>
             <br/>
